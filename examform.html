@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>External Exam Application Form</h1>
+    <from action="/submit-application" method="post">
+        <!--Text input-->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+        <label for="rollno">Roll No:</label>
+        <input type="" id="rollno" name="roll" required><br><br>
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="AI">AI</option>
+        </select><br><br>
+        <fieldset>
+            <legend>Year:</legend>
+            <input type="radio" id="3-1" name="year" value="3-1">
+            <label for="3-1">3-1</label><br>
+            <input type="radio" id="3-2" name="year" value="3-2">
+            <label for="3-2">3-2</label><br>
+        </fieldset><br><br>
+         <fieldset>
+            <legend>Subjects</legend>
+            <input type="checkbox" id="CD" name="subjects" value="CD">
+            <label for="cd">CD</label><br>
+            <input type="checkbox" id="iot" name="subjects" value="iot">
+            <label for="iot">IOT</label><br>
+            <input type="checkbox" id="ml" name="subjects" value="ml">
+            <label for="ml">ML</label><br>
+         </fieldset><br><br>
+         <fieldset>
+            <legend>Examination Type</legend>
+            <input type="radio" id="regular" name="exam" value="regular">
+            <label for="regular">Regular</label><br>
+            <input type="radio" id="supply" name="exam" value="supply">
+            <label for="supply">Supply</label><br>
+        </fieldset><br><br>
+        <input type="submit" value="submit">
+        <!--reset-->
+        <input type="reset" value="reset">
+          
+
+</body>
+</html>
